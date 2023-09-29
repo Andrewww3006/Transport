@@ -1,25 +1,28 @@
 package com.company;
 
-public class Transport {
-    private double power;
+public abstract class Transport {
+    private double hp;
     private double maxSpeed;
     private double weight;
     private String name;
 
 
-    public Transport(double power, double maxSpeed, double weight, String name)
+    public Transport(double hp, double maxSpeed, double weight, String name)
     {
-        this.power = power;
+        this.hp = hp;
         this.maxSpeed = maxSpeed;
         this.weight = weight;
         this.name = name;
 
     }
 
-    public double getPower()
+    public abstract void display();
+
+    public  double  getHP()
     {
-        return power;
+        return hp;
     }
+
 
     public double getMaxSpeed()
     {
@@ -36,7 +39,7 @@ public class Transport {
         return name;
     }
 
-
-
-
+    public double getPower() {
+        return hp*0.74;
+    }
 }

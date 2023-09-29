@@ -4,9 +4,9 @@ public class Ground extends Transport{
     private int wheels;
     public double consumption;
 
-    public Ground(double power, double maxSpeed, double weight, String name, int wheels, double consumption)
+    public Ground(double hp, double maxSpeed, double weight, String name, int wheels, double consumption)
     {
-        super(power, maxSpeed, weight, name);
+        super(hp, maxSpeed, weight, name);
         this.wheels = wheels;
         this.consumption = consumption;
 
@@ -22,4 +22,8 @@ public class Ground extends Transport{
         return consumption;
     }
 
+    @Override
+    public void display() {
+
+    }
 }
