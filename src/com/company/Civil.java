@@ -31,4 +31,12 @@ public class Civil extends Air{
 
     }
 
+    public void testCivil(double passengers)
+    {
+        if (passengers <= this.getPassengers())
+            System.out.println("Самолет загружен");
+        else System.out.println("Вам нужен самолет побольше");
+
+    }
+
 }

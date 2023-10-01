@@ -22,10 +22,15 @@ public class Truck extends Ground{
                 getConsumption() + " l/100 km; " + "Lifting: " + lifting + "t ; "+
 
                 "; Power: " + getPower() + " kVt.");
-
-
     }
 
+    public void testTruck(double weight)
+    {
+        if (weight <= this.getWeight())
+            System.out.println("Грузовик загружен");
+        else System.out.println("Вам нужен грузовик побольше");
+
+    }
 
 
 }

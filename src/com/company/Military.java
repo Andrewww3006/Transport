@@ -26,4 +26,20 @@ public class Military extends Air{
                 getRunwayLength() + " km; " + "Ejection: " + isEjection() +
                 "; Rockets: " + getRockets() + "; Power: " + getPower() + " kVt.");
     }
+
+    public void fire ()
+    {
+        for (int i = this.getRockets();i >= 0; i--)
+        {
+            if (i!=0)
+                System.out.println("Ракета   пошла");
+            else System.out.println("Боеприпасы отсутствуют");
+        }
+    }
+    public void testEjection()
+    {
+        if(this.isEjection())
+            System.out.println("Катапультирование прошло успешно");
+        else System.out.println("У вас нет такой системы");
+    }
 }
